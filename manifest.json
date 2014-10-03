@@ -1,0 +1,13 @@
+{
+"name":"Censogram",
+"description":"Extension to hide the hashtag while visiting the instagram website",
+"version":"0.1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["http://www.instagram.com/*","http://instagram.com/*"],
+      "css": ["style.css"],
+      "js": ["jquery.min.js", "censogram.js"]
+    }
+  ]
+}
